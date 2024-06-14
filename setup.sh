@@ -74,6 +74,12 @@ bash install-script/filemanager-cli.sh
 green "Installing Display Manager..."
 bash install-script/display-manager.sh
 
+# 設定ファイルのコピー
+# xfce4 の設定（Mac風）
+cp -r dotfiles/xfce4/ $HOME/.config/
+
+
+
 # 再起動
 green "Install is Complete."
 green "Type 'reboot' or 'poweroff'"
